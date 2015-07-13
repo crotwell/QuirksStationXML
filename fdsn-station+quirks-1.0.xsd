@@ -548,7 +548,9 @@ Searching for QuirksMode will find places where these changes have been made.
 						<xs:complexType>
 							<xs:simpleContent>
 								<xs:extension base="xs:double">
-									<xs:attribute name="i" type="xs:integer"/>
+<!-- QuirksMode  schema says attribute should be i but iris output is number. Allow both with optional so either will work. -->
+									<xs:attribute name="i" type="xs:integer"  use="optional"/>
+									<xs:attribute name="number" type="xs:integer"  use="optional"/>
 								</xs:extension>
 							</xs:simpleContent>
 						</xs:complexType>

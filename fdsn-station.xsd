@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Quirks mode FDSN StationXML. Please note this is NOT the official
+FDSN StationXML. Changes have been made to make stationxml output from
+the IRIS DMC FDSN Station web service be more likely to validate
+in cases where it is pretty obvious that the server is doing the wrong
+thing, as opposed to cases where the station metadata really is
+screwed up.
+
+Searching for QuirksMode will find places where these changes have been made.
+
+--> 
 <!-- 	
 	FDSN StationXML (www.fdsn.org/xml/station)
 

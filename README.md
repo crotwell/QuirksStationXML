@@ -1,3 +1,11 @@
+# Quirks-mode StationXML
+This is a fork of the FDSN StationXML schema that makes changes for cases where
+the IRIS DMC's FDSN Station web service outputs invalid StationXML. Not all 
+cases are covered, just the major ones where it is pretty obvious that the
+server is doing the wrong thing. The idea is that this allows the output
+XML to be run through a validator, but doesn't crash and burn on little things
+that can be easily handled by a manually written parser.
+ 
 # StationXML
 The FDSN StationXML schema and related documents are maintained
 by the [International Federation of Digital Seismograph Networks (FDSN)](http://www.fdsn.org/).

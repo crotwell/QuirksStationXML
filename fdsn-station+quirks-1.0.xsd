@@ -350,13 +350,15 @@ Searching for QuirksMode will find places where these changes have been made.
 				number of decibels specified in FrequencyDBVariation. </xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="Value" type="xs:double">
+<!-- QuirksMode  set minOccurs="0" as things like LOG channels often don't have any response information. -->
+			<xs:element name="Value" type="xs:double" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>A scalar that, when applied to the data values, converts the
 						data to different units (e.g. Earth units)</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="Frequency" type="xs:double">
+<!-- QuirksMode  set minOccurs="0" as things like LOG channels often don't have any response information. -->
+			<xs:element name="Frequency" type="xs:double" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The frequency (in Hertz) at which the Value is
 						valid.</xs:documentation>
@@ -386,14 +388,16 @@ Searching for QuirksMode will find places where these changes have been made.
 		<xs:complexContent>
 			<xs:extension base="fsx:GainType">
 				<xs:sequence>
-					<xs:element name="InputUnits" type="fsx:UnitsType">
+<!-- QuirksMode  set minOccurs="0" as things like LOG channels often don't have any response information. -->
+					<xs:element name="InputUnits" type="fsx:UnitsType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation> The units of the data as input from the perspective
 								of data acquisition. After correcting data for this response, these
 								would be the resulting units. </xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="OutputUnits" type="fsx:UnitsType">
+<!-- QuirksMode  set minOccurs="0" as things like LOG channels often don't have any response information. -->
+					<xs:element name="OutputUnits" type="fsx:UnitsType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation> The units of the data as output from the perspective
 								of data acquisition. These would be the units of the data prior to

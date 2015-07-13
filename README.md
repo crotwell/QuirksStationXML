@@ -1,8 +1,9 @@
 # Quirks-mode StationXML
 This is a fork of the FDSN StationXML schema that makes changes for cases where
 the IRIS DMC's FDSN Station web service outputs invalid StationXML. Not all 
-cases are covered, just the major ones where it is pretty obvious that the
-server is doing the wrong thing. The idea is that this allows the output
+cases are covered, just the ones where it is pretty obvious what is happening
+that causes the
+server to output invalid xml. The idea is that this allows the output
 XML to be run through a validator, but doesn't crash and burn on little things
 that can be easily handled by a manually written parser.
  

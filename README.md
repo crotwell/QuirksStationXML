@@ -1,3 +1,5 @@
+## Archived, no longer needed as DMC FDSN Station web service outputs valid StationXML
+
 # Quirks-mode StationXML
 This is a fork of the FDSN StationXML schema that makes changes for cases where
 the IRIS DMC's FDSN Station web service outputs invalid StationXML. Not all 
